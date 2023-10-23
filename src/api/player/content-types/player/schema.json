@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "GK",
+        "D",
+        "C",
+        "LW",
+        "RW",
+        "C/LW",
+        "C/RW",
+        "LW/RW"
+      ]
+    },
+    "Ready": {
+      "type": "boolean"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "fit",
+        "injury",
+        "sickness",
+        "absence"
+      ]
+    }
+  }
+}
